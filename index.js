@@ -1,56 +1,104 @@
+var product1 = document.getElementById("product1")
+var qty1 = document.getElementById("qty1")
+var price1 = document.getElementById("price1")
 
-let products = [
-  { name: 'Vanilla special', price: 150, image: 'Vanilla special.webp' },
-  { name: 'Cool mint', price: 200, image: 'Cool mint.webp' },
-  { name: 'pina colada', price: 300, image: 'Pina colada.webp' },
-  { name: 'Raspberry and white chocolate', price: 210, image: 'Raspberry and white chocolate.webp' },
-  { name: 'Blueberry cheesecake', price: 150, image: 'Blueberry cheesecake.webp' },
-  { name: 'Strawberry marshmallow', price: 250, image: 'Strawberry marshmallow.webp' },
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
 
-];
+var product2 = document.getElementById("product2")
+var qty2 = document.getElementById("qty2")
+var price2 = document.getElementById("price2")
 
-function loadProducts() {
-  const productContainer = document.getElementById('product-list');
-  products.forEach((product, index) => {
-    let productDiv = document.createElement('div');
-    productDiv.classList.add('col-md-4', 'mb-3');
-    productDiv.innerHTML = `
-            <div class="card h-100">
-                <img src="${product.image}" class="card-img-top" alt="${product.name}">
-                <div class="card-body">
-                    <h5 class="card-title">${product.name}</h5>
-                    <p class="card-text">₱${product.price}</p>
-                    <button class="btn btn-primary" onclick="addToCart(${index})">Add to Cart</button>
-                </div>
-            </div>
-        `;
-    productContainer.appendChild(productDiv);
-  });
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
+
+var product3 = document.getElementById("product3")
+var qty3 = document.getElementById("qty3")
+var price3 = document.getElementById("price3")
+
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
+
+var product4 = document.getElementById("product4")
+var qty4 = document.getElementById("qty4")
+var price4 = document.getElementById("price4")
+
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
+
+var product5 = document.getElementById("product5")
+var qty5 = document.getElementById("qty5")
+var price5 = document.getElementById("price5")
+
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
+
+var product6 = document.getElementById("product6")
+var qty6 = document.getElementById("qty6")
+var price6 = document.getElementById("price6")
+
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
+
+var product7 = document.getElementById("product7")
+var qty7 = document.getElementById("qty7")
+var price7 = document.getElementById("price7")
+
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
+
+function addOrder(){ 
+    carts.textContent=""
+        if (parseFloat (qty1.value) > 0) {
+            var order= qty1.value.toString() + ' pc/s x ' + price1.textContent + '------' + product1.textContent + '------ Php' + (parseFloat (qty1.value) *parseFloat (price1.textContent
+//carts.textContent += carts.value.toString() + "\n";
+carts.textContent += order
+}                                                                                                                                                   
+        if (parseFloat (qty2.value) > 0) {
+            var order= qty2.value.toString() + ' pc/s x ' + price2.textContent + '------' + product2.textContent + '------ Php' + (parseFloat (qty2.value) *parseFloat (price2.textContent
+//carts.textContent += carts.value.tp string() + "\n";                                                                                                                                                                                                                                                                                                                                         carts.textContent += order
 }
-
-let cart = [];
-
-function addToCart(index) {
-  cart.push(products[index]);
-  updateCart();
+  if (parseFloat (qty3.value) > 0) {
+            var order= qty3.value.toString() + ' pc/s x ' + price3.textContent + '------' + product3.textContent + '------ Php' + (parseFloat (qty3.value) *parseFloat (price3.textContent
+//carts.textContent += carts.value.toString() + "\n";
+carts.textContent += order
+}                                                                                                                                                   
+        if (parseFloat (qty4.value) > 0) {
+            var order= qty4.value.toString() + ' pc/s x ' + price4.textContent + '------' + product4.textContent + '------ Php' + (parseFloat (qty4.value) *parseFloat (price4.textContent)) + '/n'
+//carts.textContent += carts.value.tp string() + "\n";                                                                                                                                                                                                                                                                                                                                         carts.textContent += order
 }
-
-function updateCart() {
-  const cartItems = document.getElementById('cart-items');
-  cartItems.innerHTML = '';
-  let totalCost = 0;
-  cart.forEach(item => {
-    cartItems.innerHTML += <p>${item.name} - ₱${item.price}</p>;
-    totalCost += item.price;
-  });
-  document.getElementById('total-cost').innerText = totalCost;
+  if (parseFloat (qty5.value) > 0) {
+            var order= qty5.value.toString() + ' pc/s x ' + price5.textContent + '------' + product5.textContent + '------ Php' + (parseFloat (qty5.value) *parseFloat (price5.textContent)) + '/n'
+//carts.textContent += carts.value.toString() + "\n";
+carts.textContent += order
+}                                                                                                                                                   
+        if (parseFloat (qty6.value) > 0) {
+            var order= qty6.value.toString() + ' pc/s x ' + price6.textContent + '------' + product6.textContent + '------ Php' + (parseFloat (qty6.value) *parseFloat (price6.textContent)) + '/n'
+//carts.textContent += carts.value.tp string() + "\n";                                                                                                                                                                                                                                                                                                                                         carts.textContent += order
 }
-
-function calculateChange() {
-  const payment = document.getElementById('payment').value;
-  const totalCost = document.getElementById('total-cost').innerText;
-  const change = payment - totalCost;
-  document.getElementById('change').innerText = change >= 0 ? change : 'Insufficient payment';
+  if (parseFloat (qty7.value) > 0) {
+            var order= qty7.value.toString() + ' pc/s x ' + price7.textContent + '------' + product7.textContent + '------ Php' + (parseFloat (qty7.value) *parseFloat (price7.textContent)) + '/n'
+//carts.textContent += carts.value.tp string() + "\n";                                                                                                                                                                                                                                                                                                                                         carts.textContent += order
 }
-
-window.onload = loadProducts;
+}
+qty1.addEventListener (“keyup” , addorder);
+qty2.addEventListener (“keyup” , addorder);
+qty3.addEventListener (“keyup” , addorder);
+qty4.addEventListener (“keyup” , addorder);
+qty5.addEventListener (“keyup” , addorder);
+qty6.addEventListener (“keyup” , addorder);
+qty7.addEventListener (“keyup” , addorder);
