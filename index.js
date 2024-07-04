@@ -41,49 +41,49 @@ function addOrder() {
     var totalAmount = 0;
 
     if (parseFloat(qty1.value) > 0) {
-        var order1 = qty1.value + " pc/s x " + price1.textContent + " - " + product1.textContent + " - Php " + (parseFloat(qty1.value) * parseFloat(price1.textContent)).toFixed(2) + "\n";
+        var order1 = qty1.value + " pc/s x " + price1.textContent + " ----- " + product1.textContent + " ----- Php " + (parseFloat(qty1.value) * parseFloat(price1.textContent)).toFixed(2) + "\n";
         orders += order1;
         totalAmount += parseFloat(qty1.value) * parseFloat(price1.textContent);
     }
 
     if (parseFloat(qty2.value) > 0) {
-        var order2 = qty2.value + " pc/s x " + price2.textContent + " - " + product2.textContent + " - Php " + (parseFloat(qty2.value) * parseFloat(price2.textContent)).toFixed(2) + "\n";
+        var order2 = qty2.value + " pc/s x " + price2.textContent + " ----- " + product2.textContent + " ----- Php " + (parseFloat(qty2.value) * parseFloat(price2.textContent)).toFixed(2) + "\n";
         orders += order2;
         totalAmount += parseFloat(qty2.value) * parseFloat(price2.textContent);
     }
 
     if (parseFloat(qty3.value) > 0) {
-        var order3 = qty3.value + " pc/s x " + price3.textContent + " - " + product3.textContent + " - Php " + (parseFloat(qty3.value) * parseFloat(price3.textContent)).toFixed(2) + "\n";
+        var order3 = qty3.value + " pc/s x " + price3.textContent + " ----- " + product3.textContent + " ----- Php " + (parseFloat(qty3.value) * parseFloat(price3.textContent)).toFixed(2) + "\n";
         orders += order3;
         totalAmount += parseFloat(qty3.value) * parseFloat(price3.textContent);
     }
 
     if (parseFloat(qty4.value) > 0) {
-        var order4 = qty4.value + " pc/s x " + price4.textContent + " - " + product4.textContent + " - Php " + (parseFloat(qty4.value) * parseFloat(price4.textContent)).toFixed(2) + "\n";
+        var order4 = qty4.value + " pc/s x " + price4.textContent + " ----- " + product4.textContent + " ----- Php " + (parseFloat(qty4.value) * parseFloat(price4.textContent)).toFixed(2) + "\n";
         orders += order4;
         totalAmount += parseFloat(qty4.value) * parseFloat(price4.textContent);
     }
 
     if (parseFloat(qty5.value) > 0) {
-        var order5 = qty5.value + " pc/s x " + price5.textContent + " - " + product5.textContent + " - Php " + (parseFloat(qty5.value) * parseFloat(price5.textContent)).toFixed(2) + "\n";
+        var order5 = qty5.value + " pc/s x " + price5.textContent + " ----- " + product5.textContent + " ----- Php " + (parseFloat(qty5.value) * parseFloat(price5.textContent)).toFixed(2) + "\n";
         orders += order5;
         totalAmount += parseFloat(qty5.value) * parseFloat(price5.textContent);
     }
 
     if (parseFloat(qty6.value) > 0) {
-        var order6 = qty6.value + " pc/s x " + price6.textContent + " - " + product6.textContent + " - Php " + (parseFloat(qty6.value) * parseFloat(price6.textContent)).toFixed(2) + "\n";
+        var order6 = qty6.value + " pc/s x " + price6.textContent + " ----- " + product6.textContent + " ----- Php " + (parseFloat(qty6.value) * parseFloat(price6.textContent)).toFixed(2) + "\n";
         orders += order6;
         totalAmount += parseFloat(qty6.value) * parseFloat(price6.textContent);
     }
     
     if (parseFloat(qty7.value) > 0) {
-        var order7 = qty7.value + " pc/s x " + price7.textContent + " - " + product7.textContent + " - Php " + (parseFloat(qty7.value) * parseFloat(price7.textContent)).toFixed(2) + "\n";
+        var order7 = qty7.value + " pc/s x " + price7.textContent + " ----- " + product7.textContent + " ----- Php " + (parseFloat(qty7.value) * parseFloat(price7.textContent)).toFixed(2) + "\n";
         orders += order7;
         totalAmount += parseFloat(qty7.value) * parseFloat(price7.textContent);
     }
 
     if (parseFloat(qty8.value) > 0) {
-        var order8 = qty8.value + " pc/s x " + price8.textContent + " - " + product8.textContent + " - Php " + (parseFloat(qty8.value) * parseFloat(price8.textContent)).toFixed(2) + "\n";
+        var order8 = qty8.value + " pc/s x " + price8.textContent + " ----- " + product8.textContent + " ----- Php " + (parseFloat(qty8.value) * parseFloat(price8.textContent)).toFixed(2) + "\n";
         orders += order8;
         totalAmount += parseFloat(qty8.value) * parseFloat(price8.textContent);
     }
