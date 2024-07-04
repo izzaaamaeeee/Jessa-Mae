@@ -22,6 +22,10 @@ var product6 = document.getElementById("product6");
 var qty6 = document.getElementById("qty6");
 var price6 = document.getElementById("price6");
 
+var product7 = document.getElementById("product7");
+var qty6 = document.getElementById("qty7");
+var price7 = document.getElementById("price7");
+
 
 var carts = document.getElementById("carts");
 var total = document.getElementById("total");
@@ -67,6 +71,12 @@ function addOrder() {
         orders += order6;
         totalAmount += parseFloat(qty6.value) * parseFloat(price6.textContent);
     }
+    
+    if (parseFloat(qty7.value) > 0) {
+        var order6 = qty7.value + " pc/s x " + price7.textContent + " - " + product7.textContent + " - Php " + (parseFloat(qty7.value) * parseFloat(price7.textContent)).toFixed(2) + "\n";
+        orders += order7;
+        totalAmount += parseFloat(qty7.value) * parseFloat(price7.textContent);
+    }
 
     carts.textContent = orders;
     total.value = "Php " + totalAmount.toFixed(2);
@@ -98,6 +108,7 @@ function finishOrder() {
         qty4.value = "";
         qty5.value = "";
         qty6.value = "";
+        qty7.value = "";
     } else if (totalAmount == 0) {
         alert("Please add items to your order.");
     } else {
@@ -111,5 +122,6 @@ qty3.addEventListener("keyup", addOrder);
 qty4.addEventListener("keyup", addOrder);
 qty5.addEventListener("keyup", addOrder);
 qty6.addEventListener("keyup", addOrder);
+qty7.addEventListener("keyup", addOrder);
 
 cash.addEventListener("keyup", calculateChange);
