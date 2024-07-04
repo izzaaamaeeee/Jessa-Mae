@@ -27,7 +27,7 @@ var qty7 = document.getElementById("qty7");
 var price7 = document.getElementById("price7");
 
 var product8 = document.getElementById("product8");
-var qty8 = document.getElementById("qty7");
+var qty8 = document.getElementById("qty8");
 var price8 = document.getElementById("price8");
 
 
